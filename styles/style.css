@@ -108,11 +108,13 @@ meter::-moz-meter-bar {
 meter {
 	box-shadow: 0px 0px 0px 4px $black-color;
 } */
+
+ /* NEW STYLES''''''''''''''''''''''''''''''''''''' */
 meter {
   /* Reset the default appearance */
-  -webkit-appearance: none;
+  /* -webkit-appearance: none; */
   -moz-appearance: none;
-  appearance: none;
+  /* appearance: none; */
   height: 30px;
   /* For Firefox */
   background: #EEE;
@@ -142,8 +144,8 @@ meter::-webkit-meter-optimum-value {
 
 /* Firefox */
 meter::-moz-meter-bar {
-  /* border-radius: 3px; */
-}
+  border-radius: 3px;
+} 
 
 meter:-moz-meter-optimum::-moz-meter-bar {
   background: #86CC00;
