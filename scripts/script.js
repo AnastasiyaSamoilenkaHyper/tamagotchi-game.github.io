@@ -115,6 +115,7 @@ function showStartButton() {
 	startBtn.style.display = "block";
 }
 
+
 function createAndShowGameButtons() {
 	// Select the wrapper to put buttons in
 
@@ -146,12 +147,14 @@ function createAndShowGameButtons() {
 }
 
 function startGame() {
+	hideBtn("#btn__reset");
 	//when start game button is clicked run these functions
 
 	hideBtn("#btn__reset");
   hideStartButton();
 	monsterSays("start");
 	createMonsterObject();
+	// hungerEyes();
 	createAndShowGameButtons();
 	setStartDate();
 	calculateCurrentPlayTime();
@@ -162,6 +165,7 @@ function startGame() {
 function continueGame() {
 	hideStartButton();
 	createAndShowGameButtons();
+  // hungerEyes();
 
 	//This updateCurrentTime() breaks logic
 	// updateCurrentTime();
@@ -192,6 +196,8 @@ function checkForMonsterObject() {
 }
 
 checkForMonsterObject();
+
+//======================
 
 function createMonsterObject() {
 	//monster object
@@ -236,6 +242,7 @@ function setStartDate() {
 
 	localStorage.setItem("monster", JSON.stringify(monster));
 }
+
 
 //this variable will be assigned to actual millisecods of play time (difference between epochCurrentTime and epochGameStartTime)
 let milliseconds;
