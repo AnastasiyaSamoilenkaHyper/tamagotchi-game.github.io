@@ -12,7 +12,7 @@ main {
 }
 
 #clock {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   height: auto;
   width: auto;
   color: #2b2b2b;
@@ -108,16 +108,14 @@ meter::-moz-meter-bar {
 meter {
 	box-shadow: 0px 0px 0px 4px $black-color;
 } */
-
- /* NEW STYLES''''''''''''''''''''''''''''''''''''' */
 meter {
   /* Reset the default appearance */
-  /* -webkit-appearance: none; */
+  -webkit-appearance: none;
   -moz-appearance: none;
-  /* appearance: none; */
+  appearance: none;
   height: 30px;
   /* For Firefox */
-  background: #EEE;
+  background: #eee;
   border-radius: 5px;
   border: 4px solid #000000;
   -webkit-box-flex: 1;
@@ -128,7 +126,7 @@ meter {
 
 /* WebKit */
 meter::-webkit-meter-bar {
-  background: #EEE;
+  background: #eee;
   border-radius: 5px;
 }
 
@@ -139,21 +137,21 @@ meter::-webkit-meter-even-less-good-value {
 }
 
 meter::-webkit-meter-optimum-value {
-  background: #86CC00;
+  background: #86cc00;
 }
 
 /* Firefox */
 meter::-moz-meter-bar {
-  border-radius: 3px;
-} 
+  /* border-radius: 3px; */
+}
 
 meter:-moz-meter-optimum::-moz-meter-bar {
-  background: #86CC00;
+  background: #86cc00;
   border-radius: 0px;
 }
 
 .foodBarLabel {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 2.5rem;
   text-transform: uppercase;
 }
@@ -175,11 +173,11 @@ meter:-moz-meter-optimum::-moz-meter-bar {
 }
 
 button {
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 2.5rem;
   height: 2.5em;
   width: 7em;
-  background: #FFFFFF;
+  background: #ffffff;
   border: 4px solid #000000;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -217,7 +215,7 @@ button:hover {
   border: 4px solid black;
   padding: 10px 20px;
   text-align: center;
-  font-family: 'VT323', monospace;
+  font-family: "VT323", monospace;
   font-size: 2rem;
 }
 
